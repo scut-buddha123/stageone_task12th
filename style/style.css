@@ -1,0 +1,116 @@
+body{
+    font-family: "黑体";
+    margin:20px 20px;
+}
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+table{
+
+}
+thead{
+    text-align: left;
+
+}
+table td,th{
+    border:1px solid white;
+}
+
+thead th{
+    background: black;
+    color:white;
+}
+tbody tr:nth-child(even){
+    background: #CCCCCC;
+}
+tbody tr:nth-child(-n+3){
+    color: red;
+}
+.input-serach{
+    
+    margin-top:5%;
+
+}
+.input-serach input{
+    -webkit-transition:all 1s ease 0s;
+    -moz-transition: all 1s ease 0s ;
+    -ms-transition: all 1s ease 0s ;
+    -o-transition: all 1s ease 0s ;
+    transition: all 1s ease 0s ;
+    width: 8%;
+}
+
+.input-serach input:focus{
+    width:16%;
+    -webkit-transition:all 1s ease 0s;
+    transition:all 1s ease 0s;
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    transform: translateY(50px);
+    border:1px solid blue;
+    box-shadow: 0px 0px 1px blue;
+}
+
+/*************color部分******************/
+.color-part{
+    display: block;
+    width:300px;
+    height:150px;
+    margin-top:100px;
+    background: green;
+    position: relative;
+}
+
+.color-btn{
+    position:absolute;
+    bottom: 0px;
+    right:0px;
+}
+.color-btn label{
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background: rgba(240,240,240,0.6);
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left:5px;
+}
+
+.color-container{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.color-container ul{
+    width:1000px;
+    -webkit-transition: all 1.5s ease 0s;
+    -moz-transition: all 1.5s ease 0s;
+    -ms-transition: all 1.5s ease 0s;
+    -o-transition: all 1.5s ease 0s;
+    transition: all 1.5s ease 0s;
+}
+.color-container li{
+    float: left;
+    width:300px;
+    height:150px;
+}
+
+#label1:checked~ul{
+    margin-left: 0;
+}
+#label2:checked~ul{
+    margin-left: -100%;
+}
+#label3:checked~ul{
+    margin-left: -200%;
+}
+
+.bg1{background: green}
+.bg2{background: red}
+.bg3{background: blue}
